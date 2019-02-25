@@ -1,0 +1,28 @@
+{
+    "name": "akr4m/hashid",
+    "description": "Laravel Hash id Unique identification for table's fields.",
+    "keywords": ["laravel", "hashids", "hashid", "hash", "ids", "unique", "hash_id for laravel"],
+    "type": "library",
+    "require": {
+        "vinkla/hashids": "^5.1"
+    },
+    "license": "MIT",
+    "authors": [{
+        "name": "akr4m",
+        "email": "akr4m.kh@gmail.com"
+    }],
+    "autoload": {
+        "psr-4": {
+            "akr4m\\hashid\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "akr4m\\hashid\\HashIdServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
