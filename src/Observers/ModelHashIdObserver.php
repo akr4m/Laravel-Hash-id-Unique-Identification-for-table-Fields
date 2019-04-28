@@ -17,7 +17,7 @@ class ModelHashIdObserver
     public function created(Model $model)
     {
         $model->update([
-            'hash_id' => $model->getHashShortName() . '_' . Hashids::encode($model->id),
+            'hash_id' => $model->getHashShortName() . '_' . Hashids::encode($model->id) . '_' . uniqid(true),
         ]);
     }
 }
